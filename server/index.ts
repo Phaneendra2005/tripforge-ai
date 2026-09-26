@@ -7,7 +7,8 @@ import { regenerateStop } from "./regenerateStop.ts";
 dotenv.config();
 
 const app = express();
-app.use(cors());
+const allowedOrigin = process.env.FRONTEND_URL || "http://localhost:5173";
+app.use(cors({ origin: allowedOrigin }));
 app.use(express.json());
 
 const PORT = process.env.PORT || 3001;
@@ -85,6 +86,6 @@ app.post("/api/regenerate-stop", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server is running on port ${PORT}`);
 });
