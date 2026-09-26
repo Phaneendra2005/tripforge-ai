@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0f172a;
+  --color-accent: #059669; /* Emerald 600 */
+  --color-accent-hover: #047857; /* Emerald 700 */
+}
+
+@layer base {
+  body {
+    background-color: #f8fafc;
+    color: var(--color-primary);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
