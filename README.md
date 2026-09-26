@@ -6,7 +6,7 @@ TripForge AI is an AI-powered trip planning application that converts a free-for
 
 ## Demo
 
-**Live Demo:** `ADD_DEPLOYED_FRONTEND_URL`
+**Live Demo:** https://tripforge-ai-rho.vercel.app/
 
 **GitHub:** https://github.com/Phaneendra2005/tripforge-ai
 
